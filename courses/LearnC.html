@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C Programming</title>
+    <link rel="stylesheet" href="../stylesheets/Courses.css">
+    <link rel="stylesheet" href="../stylesheets/LearnHtmlModules.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/VSLogo.png" alt="">
+                <span>Vidya Setu</span>
+            </div>
+            <ul class="desktop-nav-menu">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-book-open"></i><span>Learn</span></a>
+                    <ul class="desktop-learn-dropdown-content">
+                        <li><a href="./LearnHtml.html">HTML</a></li>
+                        <li><a href="./LearnCSS.html">CSS</a></li>
+                        <li><a href="./LearnC.html">C Programming</a></li>
+                        <li><a href="./LearnDS.html">Data Structures</a></li>
+                        <li><a href="./LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./LearnOS.html">Operating System</a></li>
+                        <li><a href="./LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-lightbulb"></i><span>Take Quiz</span></a>
+                    <ul class="desktop-quiz-dropdown-content">
+                        <li><a href="../quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="../quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./code-editor.html"><i class="fa-solid fa-code"></i><span>Code Editor</span></a></li>
+                <li><a href="#footer"><i class="fa-solid fa-users"></i><span>Contact Us</span></a></li>
+            </ul>
+            <label class="hamburger-menu" for="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="menuToggle">
+            <ul class="phone-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Learn <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="./LearnHtml.html">HTML</a></li>
+                        <li><a href="./LearnCSS.html">CSS</a></li>
+                        <li><a href="./LearnC.html">C Programming</a></li>
+                        <li><a href="./LearnDS.html">Data Structures</a></li>
+                        <li><a href="./LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./LearnOS.html">Operating System</a></li>
+                        <li><a href="./LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Take Quiz <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="../quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="../quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./code-editor.html">Code Editor</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="landing-page" id="landing-page">
+        <div id="threejs-bg"></div>
+        <div class="landing-overlay">
+            <h1>Master C Programming with Vidya Setu</h1>
+            <p>Learn the fundamental building blocks of programming with our comprehensive C Programming course</p>
+            <button class="start-learning-btn" onclick="startLearning()">Start Learning</button>
+        </div>
+    </section>
+    <div class="container" id="main-content" style="display: none;">
+        <aside class="sidebar">
+            <h2>C Programming Tutorial</h2>
+            <ul>
+                <li><a href="#">C Introduction</a></li>
+                <li><a href="#">Data Types</a></li>
+                <li><a href="#">Operators</a></li>
+                <li><a href="#">Control Flow</a></li>
+                <li><a href="#">Functions</a></li>
+                <li><a href="#">Arrays & Pointers</a></li>
+                <li><a href="#">Strings</a></li>
+                <li><a href="#">Structures & Unions</a></li>
+                <li><a href="#">Miscellaneous</a></li>
+            </ul>
+        </aside>
+        <main class="modules-main">
+            <section class="roadmap-section">
+                <h2 class="roadmap-title">C Programming 31-Day Lecture Roadmap</h2>
+                <div class="instructor-info">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Instructor: <span class="instructor-name">Pankaj Sharma Sir</span></span>
+                </div>
+                <div class="roadmap-grid">
+                    <div class="roadmap-card" data-day="1">
+                        <div class="roadmap-card-header">Day 1</div>
+                        <div class="roadmap-card-body">Complete L01, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="2">
+                        <div class="roadmap-card-header">Day 2</div>
+                        <div class="roadmap-card-body">Complete L02, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="3">
+                        <div class="roadmap-card-header">Day 3</div>
+                        <div class="roadmap-card-body">Complete L03, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="4">
+                        <div class="roadmap-card-header">Day 4</div>
+                        <div class="roadmap-card-body">Complete L04, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="5">
+                        <div class="roadmap-card-header">Day 5</div>
+                        <div class="roadmap-card-body">Complete L05, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="6">
+                        <div class="roadmap-card-header">Day 6</div>
+                        <div class="roadmap-card-body">Complete L06, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="7">
+                        <div class="roadmap-card-header">Day 7</div>
+                        <div class="roadmap-card-body">Complete L07, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="8">
+                        <div class="roadmap-card-header">Day 8</div>
+                        <div class="roadmap-card-body">Complete L08, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="9">
+                        <div class="roadmap-card-header">Day 9</div>
+                        <div class="roadmap-card-body">Complete L09, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="10">
+                        <div class="roadmap-card-header">Day 10</div>
+                        <div class="roadmap-card-body">Complete L10, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="11">
+                        <div class="roadmap-card-header">Day 11</div>
+                        <div class="roadmap-card-body">Complete L11, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="12">
+                        <div class="roadmap-card-header">Day 12</div>
+                        <div class="roadmap-card-body">Complete L12, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="13">
+                        <div class="roadmap-card-header">Day 13</div>
+                        <div class="roadmap-card-body">Complete L13, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="14">
+                        <div class="roadmap-card-header">Day 14</div>
+                        <div class="roadmap-card-body">Complete L14, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="15">
+                        <div class="roadmap-card-header">Day 15</div>
+                        <div class="roadmap-card-body">Complete L15, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="16">
+                        <div class="roadmap-card-header">Day 16</div>
+                        <div class="roadmap-card-body">Complete L16, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="17">
+                        <div class="roadmap-card-header">Day 17</div>
+                        <div class="roadmap-card-body">Complete L17, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="18">
+                        <div class="roadmap-card-header">Day 18</div>
+                        <div class="roadmap-card-body">Complete L18, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="19">
+                        <div class="roadmap-card-header">Day 19</div>
+                        <div class="roadmap-card-body">Complete L19, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="20">
+                        <div class="roadmap-card-header">Day 20</div>
+                        <div class="roadmap-card-body">Complete L20, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="21">
+                        <div class="roadmap-card-header">Day 21</div>
+                        <div class="roadmap-card-body">Complete L21, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="22">
+                        <div class="roadmap-card-header">Day 22</div>
+                        <div class="roadmap-card-body">Complete L22, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="23">
+                        <div class="roadmap-card-header">Day 23</div>
+                        <div class="roadmap-card-body">Complete L23, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="24">
+                        <div class="roadmap-card-header">Day 24</div>
+                        <div class="roadmap-card-body">Complete L24, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="25">
+                        <div class="roadmap-card-header">Day 25</div>
+                        <div class="roadmap-card-body">Complete L25, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="26">
+                        <div class="roadmap-card-header">Day 26</div>
+                        <div class="roadmap-card-body">Complete L26, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="27">
+                        <div class="roadmap-card-header">Day 27</div>
+                        <div class="roadmap-card-body">Complete L27, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="28">
+                        <div class="roadmap-card-header">Day 28</div>
+                        <div class="roadmap-card-body">Complete L28, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="29">
+                        <div class="roadmap-card-header">Day 29</div>
+                        <div class="roadmap-card-body">Complete L29, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="30">
+                        <div class="roadmap-card-header">Day 30</div>
+                        <div class="roadmap-card-body">Complete L30, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                    <div class="roadmap-card" data-day="31">
+                        <div class="roadmap-card-header">Day 31</div>
+                        <div class="roadmap-card-body">Complete L31, Make Notes, Revise</div>
+                        <span class="status pending">Pending</span>
+                    </div>
+                </div>
+            </section>
+            <div id="progress-tracker" class="progress-tracker">
+                <span>Your progress: <span id="progress-percent">0%</span> Complete</span>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-bar-fill" style="width:0%"></div>
+                </div>
+                <span id="progress-count">0/0</span>
+            </div>
+            <section class="module-section">
+                <button class="accordion">Data Types & Operators</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L01</td><td>Intro to Data Types</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L02</td><td>Operators Overview</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L03</td><td>Arithmetic Operators</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L04</td><td>Relational Operators</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L05</td><td>Logical Operators</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L06</td><td>Bitwise Operators</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Control Flow Statements</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L07</td><td>If Statements</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L08</td><td>Switch Statements</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L09</td><td>For Loops</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L10</td><td>While Loops</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L11</td><td>Do-While Loops</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Functions & Storage Classes</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L12</td><td>Functions Intro</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L13</td><td>Function Arguments</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L14</td><td>Return Values</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L15</td><td>Recursion</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L16</td><td>Storage Classes</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L17</td><td>Auto, Register, Static</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L18</td><td>Extern</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Arrays & Pointers</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L19</td><td>Arrays Intro</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L20</td><td>Multi-dimensional Arrays</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L21</td><td>Pointers Intro</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L22</td><td>Pointers & Arrays</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L23</td><td>Pointers to Functions</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L24</td><td>Pointers to Structures</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L25</td><td>Dynamic Memory Allocation</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L26</td><td>Pointer Arithmetic</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L27</td><td>Common Pointer Errors</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Strings</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L28</td><td>Strings Intro</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                            <tr><td><span class="status pending">Pending</span></td><td>L29</td><td>String Functions</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Structures & Unions</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L30</td><td>Structures and Unions in C</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Miscellaneous</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Lecture</th>
+                                <th>Topic</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="status pending">Pending</span></td><td>L31</td><td>Miscellaneous</td><td><i class="fa-brands fa-youtube"></i></td><td><i class="fa-solid fa-download"></i></td><td><i class="fa-regular fa-file"></i></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/LearnHtmlModules.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="../scripts/HtmlLanding3D.js"></script>
+    <script>
+        function startLearning() {
+            document.getElementById('landing-page').style.display = 'none';
+            document.getElementById('main-content').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

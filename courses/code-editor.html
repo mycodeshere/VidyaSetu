@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../stylesheets/codeditor.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Website logo -->
+            <div class="logo">
+                <img src="./images/VSLogo.png" alt="">
+                <!-- Website logo name -->
+                <span>Vidya Setu</span>
+            </div>
+            <!-- Navbar menu for Desktop -->
+            <ul class="desktop-nav-menu">
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-book-open"></i><span>Learn</span></a>
+                    <ul class="desktop-learn-dropdown-content">
+                        <li><a href="./courses/LearnHtml.html">HTML</a></li>
+                        <li><a href="./courses/LearnCSS.html">CSS</a></li>
+                        <li><a href="./courses/LearnC.html">C Programming</a></li>
+                        <li><a href="./courses/LearnDS.html">Data Structures</a></li>
+                        <li><a href="./courses/LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./courses/LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./courses/LearnOS.html">Operating System</a></li>
+                        <li><a href="./courses/LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-lightbulb"></i><span>Take Quiz</span></a>
+                    <ul class="desktop-quiz-dropdown-content">
+                        <li><a href="./quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="./quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./courses/code-editor.html"><i class="fa-solid fa-code"></i><span>Code Editor</span></a></li>
+                <li><a href="#footer"><i class="fa-solid fa-users"></i><span>Contact Us</span></a></li>
+            </ul>
+            <!-- Hamburger icon for mobile -->
+            <label class="hamburger-menu" for="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- Hidden checkbox for mobile menu toggle -->
+            <input type="checkbox" id="menuToggle">
+            <!-- Navbar menu for Mobile -->
+            <ul class="phone-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Learn <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="./courses/LearnHtml.html">HTML</a></li>
+                        <li><a href="./courses/LearnCSS.html">CSS</a></li>
+                        <li><a href="./courses/LearnC.html">C Programming</a></li>
+                        <li><a href="./courses/LearnDS.html">Data Structures</a></li>
+                        <li><a href="./courses/LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./courses/LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./courses/LearnOS.html">Operating System</a></li>
+                        <li><a href="./courses/LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Take Quiz <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="./quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="./quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./courses/code-editor.html">Code Editor</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <iframe src="https://onecompiler.com/html" frameborder="0"></iframe>
+    </main>
+</body>
+
+</html>

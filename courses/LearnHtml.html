@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="../stylesheets/Courses.css">
+    <link rel="stylesheet" href="../stylesheets/LearnHtmlModules.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Website logo -->
+            <div class="logo">
+                <img src="../images/VSLogo.png" alt="">
+                <!-- Website logo name -->
+                <span>Vidya Setu</span>
+            </div>
+            <!-- Navbar menu for Desktop -->
+            <ul class="desktop-nav-menu">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-book-open"></i><span>Learn</span></a>
+                    <ul class="desktop-learn-dropdown-content">
+                        <li><a href="./LearnHtml.html">HTML</a></li>
+                        <li><a href="./LearnCSS.html">CSS</a></li>
+                        <li><a href="./LearnC.html">C Programming</a></li>
+                        <li><a href="./LearnDS.html">Data Structures</a></li>
+                        <li><a href="./LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./LearnOS.html">Operating System</a></li>
+                        <li><a href="./LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-lightbulb"></i><span>Take Quiz</span></a>
+                    <ul class="desktop-quiz-dropdown-content">
+                        <li><a href="../quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="../quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./code-editor.html"><i class="fa-solid fa-code"></i><span>Code Editor</span></a></li>
+                <li><a href="#footer"><i class="fa-solid fa-users"></i><span>Contact Us</span></a></li>
+            </ul>
+            <!-- Hamburger icon for mobile -->
+            <label class="hamburger-menu" for="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- Hidden checkbox for mobile menu toggle -->
+            <input type="checkbox" id="menuToggle">
+            <!-- Navbar menu for Mobile -->
+            <ul class="phone-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Learn <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="./LearnHtml.html">HTML</a></li>
+                        <li><a href="./LearnCSS.html">CSS</a></li>
+                        <li><a href="./LearnC.html">C Programming</a></li>
+                        <li><a href="./LearnDS.html">Data Structures</a></li>
+                        <li><a href="./LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./LearnOS.html">Operating System</a></li>
+                        <li><a href="./LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Take Quiz <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="../quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="../quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./code-editor.html">Code Editor</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page Section -->
+    <section class="landing-page" id="landing-page">
+        <div id="threejs-bg"></div>
+        <div class="landing-overlay">
+            <h1>Master HTML with Vidya Setu</h1>
+            <p>Learn the fundamental building blocks of web development with our comprehensive HTML course</p>
+            <button class="start-learning-btn" onclick="startLearning()">Start Learning</button>
+        </div>
+    </section>
+
+    <!-- Main Content Section (Initially Hidden) -->
+    <div class="container" id="main-content" style="display: none;">
+        <aside class="sidebar">
+            <h2>HTML Tutorial</h2>
+            <ul>
+                <li><a href="#">HTML Introduction</a></li>
+                <li><a href="#">HTML Working</a></li>
+                <li><a href="#">HTML Structure</a></li>
+                <li><a href="#">Heading Tags</a></li>
+                <li><a href="#">Paragraph Tags</a></li>
+                <li><a href="#">Horizontal Tag</a></li>
+                <li><a href="#">Line Break Tag</a></li>
+                <li><a href="#">Anchor Tag</a></li>
+                <li><a href="#">Image Tag</a></li>
+                <li><a href="#">INLINE & BLOCK ELEMENTS</a></li>
+            </ul>
+        </aside>
+        <main class="modules-main">
+            <div id="progress-tracker" class="progress-tracker">
+                <span>Your progress: <span id="progress-percent">0%</span> Complete</span>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-bar-fill" style="width:0%"></div>
+                </div>
+                <span id="progress-count">0/0</span>
+            </div>
+            <section class="module-section">
+                <button class="accordion active">Internet Basics</button>
+                <div class="panel show">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Interview Question</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>Let's Learn Full Stack Web Development Using MERN Stack || Episode-1</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>Understanding Internet Networks Web And More</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>How The INTERNET Works - A Simple Explanation</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">Basics Of HTML</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Interview Question</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>HTML Introduction & Structure</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>HTML Tags & Elements</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">CSS</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Interview Question</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>CSS Introduction & Selectors</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">JavaScript</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Interview Question</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>JavaScript Basics</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="accordion">FrontEnd</button>
+                <div class="panel">
+                    <table class="module-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Interview Question</th>
+                                <th>YouTube</th>
+                                <th>Code</th>
+                                <th>Article</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>Frontend Overview</td>
+                                <td><i class="fa-brands fa-youtube"></i></td>
+                                <td><i class="fa-solid fa-download"></i></td>
+                                <td><i class="fa-regular fa-file"></i></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../scripts/LearnHtmlModules.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="../scripts/HtmlLanding3D.js"></script>
+    <script>
+        function startLearning() {
+            document.getElementById('landing-page').style.display = 'none';
+            document.getElementById('main-content').style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
