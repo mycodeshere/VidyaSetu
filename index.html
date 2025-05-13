@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya Setu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Website logo -->
+            <div class="logo">
+                <img src="./images/VSLogo.png" alt="">
+                <!-- Website logo name -->
+                <span>Vidya Setu</span>
+            </div>
+            <!-- Navbar menu for Desktop -->
+            <ul class="desktop-nav-menu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-book-open"></i><span>Learn</span></a>
+                    <ul class="desktop-learn-dropdown-content">
+                        <li><a href="./courses/LearnHtml.html">HTML</a></li>
+                        <li><a href="./courses/LearnCSS.html">CSS</a></li>
+                        <li><a href="./courses/LearnC.html">C Programming</a></li>
+                        <li><a href="./courses/LearnDS.html">Data Structures</a></li>
+                        <li><a href="./courses/LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./courses/LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./courses/LearnOS.html">Operating System</a></li>
+                        <li><a href="./courses/LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-dropdown">
+                    <a href="#"><i class="fa-solid fa-lightbulb"></i><span>Take Quiz</span></a>
+                    <ul class="desktop-quiz-dropdown-content">
+                        <li><a href="./quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="./quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./courses/code-editor.html"><i class="fa-solid fa-code"></i><span>Code Editor</span></a></li>
+                <li><a href="#footer"><i class="fa-solid fa-users"></i><span>Contact Us</span></a></li>
+            </ul>
+            <!-- Hamburger icon for mobile -->
+            <label class="hamburger-menu" for="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- Hidden checkbox for mobile menu toggle -->
+            <input type="checkbox" id="menuToggle">
+            <!-- Navbar menu for Mobile -->
+            <ul class="phone-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Learn <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="./courses/LearnHtml.html">HTML</a></li>
+                        <li><a href="./courses/LearnCSS.html">CSS</a></li>
+                        <li><a href="./courses/LearnC.html">C Programming</a></li>
+                        <li><a href="./courses/LearnDS.html">Data Structures</a></li>
+                        <li><a href="./courses/LearnDBMS.html">Database Management System</a></li>
+                        <li><a href="./courses/LearnAlgo.html">Algorithm</a></li>
+                        <li><a href="./courses/LearnOS.html">Operating System</a></li>
+                        <li><a href="./courses/LearnCN.html">Computer Networks</a></li>
+                    </ul>
+                </li>
+                <li class="phone-dropdown">
+                    <label class="dropdown-label">Take Quiz <i class="fa-solid fa-chevron-down"></i></label>
+                    <ul class="phone-dropdown-content">
+                        <li><a href="./quizes/HtmlQuiz.html">HTML Quiz</a></li>
+                        <li><a href="./quizes/CssQuiz.html">CSS Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./courses/code-editor.html">Code Editor</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="./images/wave (15).svg" alt="Wave Design" class="svg-bottom svg1">
+    <main>
+        <div class="welcome-area">
+            <div>
+                <div class="welcome-to-sikho">Welcome to <b>Vidya Setu</b></div>
+                <div class="lets-learn-language">
+                    <p>Let's Learn</p>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>Core Subjects</span></li>
+                    </ul>
+                    <br>
+                </div>
+                <p class="welcome-para ">Learn computer science and programming with courses, <br> tutorials, practice problems, contests and more. <br>Explore topics like DSA, ML, web development, system design, DevOps and more.<br>Let's learn and excel together!</p>
+            </div>
+            <img src="./images/Screenshot 2025-04-30 030457.png" alt="">
+        </div>
+        <img src="./images/wave (18).svg" alt="Wave Design" class="svg-bottom svg2">
+        <div class="parallax parallax0"></div>
+
+        <div class="HTML-section">
+            <div class="HTML-container">
+                <div class="left-section">
+                    <h2>HTML</h2>
+                    <p>The language for building web pages</p>
+                    <button class="btn green">Learn HTML</button>
+                    <button class="btn yellow">Video Tutorial</button>
+                    <button class="btn black">HTML Reference</button>
+                    <button class="btn pink">Get Certified</button>
+                </div>
+                <div class="animated-border html-animated-border">
+                    <div class="right-section">
+                        <h2>HTML Example:</h2>
+                        <pre class="code-box">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tutorial</title>
+</head>
+<body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+</body>
+</html>
+                    </pre>
+                        <button class="btn try"><a href="./courses/code-editor.html">Try it Yourself</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax parallax1"></div>
+
+        <div class="CSS-section">
+            <div class="CSS-container">
+                <div class="left-section">
+                    <h2>CSS</h2>
+                    <p>The language for building web pages</p>
+                    <button class="btn green">Learn CSS</button>
+                    <button class="btn black">CSS Reference</button>
+                    <button class="btn pink">Get Certified</button>
+                </div>
+                <div class="animated-border css-animated-border">
+                    <div class="right-section">
+                        <h2>CSS Example:</h2>
+                        <pre class="code-box">
+body{
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+}
+                    </pre>
+                        <button class="btn try"><a href="./courses/code-editor.html">Try it Yourself</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax parallax2"></div>
+
+        <div class="JAVASCRIPT-section">
+            <div class="JAVASCRIPT-container">
+                <div class="left-section">
+                    <h2>JavaScript</h2>
+                    <p>The language for building web pages</p>
+                    <button class="btn green">Learn JavaScript</button>
+                    <button class="btn black">JS Reference</button>
+                    <button class="btn pink">Get Certified</button>
+                </div>
+                <div class="animated-border js-animated-border">
+                    <div class="right-section">
+                        <h2>JavaScript Example:</h2>
+                        <pre class="code-box">
+<!DOCTYPE html>
+<html>
+<body>
+                            
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo")
+.innerHTML = 5 + 6;
+</script>
+
+</body>
+</html>
+                    </pre>
+                        <button class="btn try"><a href="./courses/code-editor.html">Try it Yourself</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax parallax3"></div>
+
+        <div class="Editor">
+            <div class="code-editor">
+                <h2>Code Editor</h2>
+                <p>Write, run, and test your HTML, CSS, and JavaScript code instantly in your browser. 
+                  <br>The Vidya Setu Code Editor is perfect for learning, experimenting, and building web projects—no installation required!</p>
+                <img src="./images/Code-Editor.png" alt="Code-Editor">
+                <div>
+                    <button><a href="./courses/code-editor.html">Try Code-Editor</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax parallax4"></div>
+
+    </main>
+    <footer>
+        <div id="footer">
+            <div class="contact-us">
+                <div>
+                    <h3>Vidya Setu</h3>
+                    <p>Learn, build, and grow — discover a world of engineering resources designed to fuel your future.</p>
+                </div>
+                <hr>
+                <div>
+                    <a href="">About Us</a> |
+                    <a href="">Contact Us</a> |
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div>
+                    <p>Follow us:</p>
+                    <a href="">LinkedIn</a>
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                </div>
+
+                <div>
+                    <p>© 2025 Vidya Setu. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <p>We will get back you soon</p>
+                <form action="">
+                    <label for="Name">Name</label>
+                    <div>
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <label for="">Email</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+
+                    <label for="">Message</label>
+                    <textarea cols="44" rows="5" name="" id="" placeholder="Enter your Message"></textarea>
+
+                    <input type="submit" value="Send">
+
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- Modern GFG-style Footer Start -->
+    <div class="gfg-footer">
+      <div class="gfg-footer-main">
+        <aside class="gfg-footer-aside">
+          <div class="gfg-footer-brand">
+            <img src="./images/VSLogo.png" alt="Sikho Logo" class="gfg-footer-logo">
+            <div>
+              <strong>Vidya Setu</strong><br>
+              Learn, Build & Grow
+            </div>
+          </div>
+          <div class="gfg-footer-addresses">
+            <div>
+              <strong>Corporate & Communications Address:</strong><br>
+              A-143, 7th Floor, Sovereign Corporate Tower, Sector-136, Noida, Uttar Pradesh (201305)
+            </div>
+            <div>
+              <strong>Registered Address:</strong><br>
+              K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
+            </div>
+          </div>
+          <div class="gfg-footer-social">
+            <div class="gfg-footer-social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="gfg-footer-apps">
+              <a href="#"><img src="https://img.icons8.com/color/48/000000/google-play.png" alt="Google Play"/></a>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="App Store"/></a>
+            </div>
+            <button class="gfg-footer-ad-btn">Advertise with us</button>
+          </div>
+        </aside>
+        <div class="gfg-footer-links">
+          <div>
+            <strong>Company</strong>
+            <a href="#">About Us</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Careers</a>
+            <a href="#">In Media</a>
+            <a href="#">Contact Us</a>
+            <a href="#">GfG Corporate Solution</a>
+            <a href="#">Placement Training Program</a>
+          </div>
+          <div>
+            <strong>Explore</strong>
+            <a href="#">Job-A-Thon Hiring Challenge</a>
+            <a href="#">GfG Weekly Contest</a>
+            <a href="#">Offline Classroom Program</a>
+            <a href="#">DSA in JAVA/C++</a>
+            <a href="#">Master System Design</a>
+            <a href="#">Master CP</a>
+            <a href="#">GeeksforGeeks Videos</a>
+          </div>
+          <div>
+            <strong>Languages</strong>
+            <a href="#">Python</a>
+            <a href="#">Java</a>
+            <a href="#">C++</a>
+            <a href="#">PHP</a>
+            <a href="#">GoLang</a>
+            <a href="#">SQL</a>
+            <a href="#">R Language</a>
+            <a href="#">Android Tutorial</a>
+          </div>
+          <div>
+            <strong>DSA</strong>
+            <a href="#">Data Structures</a>
+            <a href="#">Algorithms</a>
+            <a href="#">DSA for Beginners</a>
+            <a href="#">Basic DSA Problems</a>
+            <a href="#">DSA Roadmap</a>
+            <a href="#">DSA Interview Questions</a>
+            <a href="#">Competitive Programming</a>
+          </div>
+          <div>
+            <strong>Data Science & ML</strong>
+            <a href="#">Data Science With Python</a>
+            <a href="#">Data Science For Beginner</a>
+            <a href="#">Machine Learning</a>
+            <a href="#">ML Maths</a>
+            <a href="#">Data Visualisation</a>
+            <a href="#">Pandas</a>
+            <a href="#">NumPy</a>
+            <a href="#">NLP</a>
+            <a href="#">Deep Learning</a>
+          </div>
+          <div>
+            <strong>Web Technologies</strong>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">TypeScript</a>
+            <a href="#">ReactJS</a>
+            <a href="#">NextJS</a>
+            <a href="#">NodeJS</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">Tailwind CSS</a>
+          </div>
+          <div>
+            <strong>Python Tutorial</strong>
+            <a href="#">Python Programming Examples</a>
+            <a href="#">Django Tutorial</a>
+            <a href="#">Python Projects</a>
+            <a href="#">Python Tkinter</a>
+            <a href="#">Web Scraping</a>
+            <a href="#">OpenCV Tutorial</a>
+            <a href="#">Python Interview Question</a>
+          </div>
+          <div>
+            <strong>Computer Science</strong>
+            <a href="#">GATE CS Notes</a>
+            <a href="#">Operating Systems</a>
+            <a href="#">Computer Network</a>
+            <a href="#">Database Management System</a>
+            <a href="#">Software Engineering</a>
+            <a href="#">Digital Logic Design</a>
+            <a href="#">Engineering Maths</a>
+          </div>
+          <div>
+            <strong>DevOps</strong>
+            <a href="#">Git</a>
+            <a href="#">AWS</a>
+            <a href="#">Docker</a>
+            <a href="#">Kubernetes</a>
+            <a href="#">Azure</a>
+            <a href="#">GCP</a>
+            <a href="#">DevOps Roadmap</a>
+          </div>
+          <div>
+            <strong>System Design</strong>
+            <a href="#">High Level Design</a>
+            <a href="#">Low Level Design</a>
+            <a href="#">UML Diagrams</a>
+            <a href="#">Interview Guide</a>
+            <a href="#">Design Patterns</a>
+            <a href="#">OOAD</a>
+            <a href="#">System Design Bootcamp</a>
+            <a href="#">Interview Questions</a>
+          </div>
+          <div>
+            <strong>School Subjects</strong>
+            <a href="#">Mathematics</a>
+            <a href="#">Physics</a>
+            <a href="#">Chemistry</a>
+            <a href="#">Biology</a>
+            <a href="#">Social Science</a>
+            <a href="#">English Grammar</a>
+          </div>
+          <div>
+            <strong>Databases</strong>
+            <a href="#">SQL</a>
+            <a href="#">MYSQL</a>
+            <a href="#">PostgreSQL</a>
+            <a href="#">PL/SQL</a>
+            <a href="#">MongoDB</a>
+          </div>
+          <div>
+            <strong>Preparation Corner</strong>
+            <a href="#">Company-Wise Recruitment Process</a>
+            <a href="#">Aptitude Preparation</a>
+            <a href="#">Puzzles</a>
+            <a href="#">Company-Wise Preparation</a>
+          </div>
+          <div>
+            <strong>More Tutorials</strong>
+            <a href="#">Software Development</a>
+            <a href="#">Software Testing</a>
+            <a href="#">Product Management</a>
+            <a href="#">Project Management</a>
+            <a href="#">Linux</a>
+            <a href="#">Excel</a>
+            <a href="#">All Cheat Sheets</a>
+          </div>
+          <div>
+            <strong>Machine Learning/Data Science</strong>
+            <a href="#">Complete Machine Learning & Data</a>
+            <a href="#">Science Program - [LIVE]</a>
+            <a href="#">Data Analytics Training using Excel, SQL,</a>
+            <a href="#">Python & PowerBI - [LIVE]</a>
+            <a href="#">Data Science Training Program - [LIVE]</a>
+            <a href="#">Data Science Course with IBM</a>
+            <a href="#">Certification</a>
+          </div>
+          <div>
+            <strong>Programming Languages</strong>
+            <a href="#">C Programming with Data Structures</a>
+            <a href="#">C++ Programming Course</a>
+            <a href="#">Java Programming Course</a>
+            <a href="#">Python Full Course</a>
+          </div>
+          <div>
+            <strong>Clouds/Devops</strong>
+            <a href="#">DevOps Engineering</a>
+            <a href="#">AWS Solutions Architect Certification</a>
+            <a href="#">Salesforce Certified Administrator</a>
+            <a href="#">Course</a>
+          </div>
+          <div>
+            <strong>GATE 2026</strong>
+            <a href="#">GATE CS Rank Booster</a>
+            <a href="#">GATE DA Rank Booster</a>
+            <a href="#">GATE CS & IT Course - 2026</a>
+            <a href="#">GATE DA Course 2026</a>
+            <a href="#">GATE Rank Predictor</a>
+          </div>
+        </div>
+      </div>
+      <div class="gfg-footer-bottom">
+        <span>@VidyaSetu, All rights reserved</span>
+      </div>
+    </div>
+    <!-- Modern GFG-style Footer End -->
+</body>
+
+</html>
